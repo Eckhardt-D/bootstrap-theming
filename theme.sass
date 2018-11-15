@@ -1,0 +1,56 @@
+$primary-font: 'Merienda'
+$secondary-font: sans-serif
+$primary-color: #EFCC70
+$secondary-color: #6C5D33
+$info-color: #C0E4F0
+$theme-shadow: 1px 1px 9px rgba(0,0,0,0.2)
+$text-display: display
+$elegant-border: 0.5px solid grey
+$semantic-bgs: primary secondary success danger warning info light dark white transparent
+
+/* Add Text shadow to the display texts */ 
+@for $i from 1 through 4
+  .#{$text-display}-#{$i}
+    text-shadow: $theme-shadow
+
+/*Make alerts have different font*/ 
+@each $item in $semantic-bgs
+  $i: index($semantic-bgs, $item)
+  .bg-#{$item}
+    font-family: $secondary-font
+
+  
+/* Selector code */
+h1, h2, h3, h4, h5, h6, p, a
+  font-family: $primary-font, cursive
+
+.bg
+  &-primary, &-secondary
+    font-family: $secondary-font
+
+.blockquote
+  border: $elegant-border
+  padding: 15px
+  margin: 15px auto
+  p
+    color: darken(silver, 50%);
+    &:before, &:after
+      content: '"'
+
+.bg-primary
+  background: $primary-color!important
+.bg-secondary
+  background: $secondary-color!important
+.bg-info
+  background: $info-color!important
+
+.text-primary
+  color: $primary-color!important
+.text-secondary
+  color: $secondary-color!important
+.text-info
+  color: $info-color!important
+
+
+
+

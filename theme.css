@@ -1,0 +1,77 @@
+/* Add Text shadow to the display texts */
+.display-1 {
+  text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2); }
+
+.display-2 {
+  text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2); }
+
+.display-3 {
+  text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2); }
+
+.display-4 {
+  text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2); }
+
+/*Make alerts have different font*/
+.bg-primary {
+  font-family: sans-serif; }
+
+.bg-secondary {
+  font-family: sans-serif; }
+
+.bg-success {
+  font-family: sans-serif; }
+
+.bg-danger {
+  font-family: sans-serif; }
+
+.bg-warning {
+  font-family: sans-serif; }
+
+.bg-info {
+  font-family: sans-serif; }
+
+.bg-light {
+  font-family: sans-serif; }
+
+.bg-dark {
+  font-family: sans-serif; }
+
+.bg-white {
+  font-family: sans-serif; }
+
+.bg-transparent {
+  font-family: sans-serif; }
+
+/* Selector code */
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "Merienda", cursive; }
+
+.bg-primary, .bg-secondary {
+  font-family: sans-serif; }
+
+.blockquote {
+  border: 0.5px solid grey;
+  padding: 15px;
+  margin: 15px auto; }
+  .blockquote p {
+    color: #414141; }
+    .blockquote p:before, .blockquote p:after {
+      content: '"'; }
+
+.bg-primary {
+  background: #EFCC70 !important; }
+
+.bg-secondary {
+  background: #6C5D33 !important; }
+
+.bg-info {
+  background: #C0E4F0 !important; }
+
+.text-primary {
+  color: #EFCC70 !important; }
+
+.text-secondary {
+  color: #6C5D33 !important; }
+
+.text-info {
+  color: #C0E4F0 !important; }

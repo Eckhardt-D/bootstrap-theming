@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-theming",
+  "version": "1.0.0",
+  "description": "A POC for sass template into bootstrap",
+  "main": "main.js",
+  "scripts": {
+    "build": "node ./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eckhardt-D/bootstrap-theming.git"
+  },
+  "author": "Eckhardt Dreyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eckhardt-D/bootstrap-theming/issues"
+  },
+  "homepage": "https://github.com/Eckhardt-D/bootstrap-theming#readme",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
