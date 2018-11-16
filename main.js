@@ -1,10 +1,16 @@
-const sass = require('node-sass');
-const fs = require('fs');
+const Utils = require('./utils');
+const fs    = require('fs');
 
-console.log('Starting Sass compiler');
-sass.render(
-  {
-  file: 'theme.sass',
-  outFile: './theme.css'
-  }, 
-  (err, _) => err ? console.log(err) : fs.writeFile('./theme.css', _.css, err =>  !err ? console.log('Done compiling'): console.log(err)));
+const source         = fs.readdirSync('./src/');
+const sassCompiler   = Utils.sassCompiler;
+const rCopy          = Utils.rCopy;
+
+if (!fs.existsSync('./build')){
+  fs.mkdirSync('./build');
+}
+
+/* copy all html components into the build directory */
+process.stdout.write('building source\n');
+
+sassCompiler();
+rCopy(source);
