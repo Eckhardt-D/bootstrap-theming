@@ -19,11 +19,13 @@ function writer(files, ctx) {
       if($('link[data-linked="true"]').length <= 0) {
         if(ctx === 'production') {
           $(`<link data-linked="true" rel="stylesheet" href="bootstrap.min.css"></link>\n`).appendTo('head');
+          $(`<link data-linked="true" rel="stylesheet" href="theme.css"></link>\n`).appendTo('head');
           $(`<script data-linked="true" src="bootstrap.min.js" defer />\n`).appendTo('body');
           $(`<script data-linked="true" src="https://code.jquery.com/jquery-3.3.1.min.js" defer />\n`).appendTo('head');
         } else {
           // Run cdn in dev mode.
           $(`<link data-linked="true" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></link>\n`).appendTo('head');
+          $(`<link data-linked="true" rel="stylesheet" href="theme.css"></link>\n`).appendTo('head');
           $(`<script data-linked="true" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" defer></script>\n`).appendTo('body');
           $(`<script data-linked="true" src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>\n`).appendTo('head');
         }

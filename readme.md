@@ -10,9 +10,6 @@ The main function is a specific builder. the src directory contains all the html
 
 The static directory contains the bootstrap source code and should never need to change, unless a newer version is required. The public directory is where all your images etc. will be added and will be copied along with the source to the build/ directory.
 
-## index.html
-
-Purely a test file. Use src to create components.
 
 ## Theme.sass
 

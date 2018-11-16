@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Merienda);
+  
+/***********************
+  Colors and fonts
+ ***********************/
 $primary-font: 'Merienda'
 $secondary-font: sans-serif
 $primary-color: #EFCC70
@@ -21,7 +26,7 @@ $semantic-bgs: primary secondary success danger warning info light dark white tr
 
 /* Selector code */ 
 h1, h2, h3, h4, h5, h6, p, a
-  font-family: $primary-font, sans-serif
+  font-family: $primary-font, cursive
 
 .bg
   &-primary, &-secondary 
@@ -36,19 +41,72 @@ h1, h2, h3, h4, h5, h6, p, a
     &:before, &:after
       content: '"'
 
-.bg-primary
+.bg-primary, .alert-primary, .badge-primary, .btn-primary
   background: $primary-color!important
-.bg-secondary
+
+.bg-secondary, .alert-secondary, .badge-secodary, .btn-secondary
   background: $secondary-color!important
-.bg-info
+  color: white
+
+.bg-info, .alert-info, .badge-info, .btn-info
   background: $info-color!important
+  color: black
+
+.btn-outline-primary
+  border-color: $primary-color!important
+  color: black
+  &:hover
+    background: $primary-color!important
+
+.btn-outline-secondary 
+  border-color: $secondary-color!important
+  &:hover
+    background: $secondary-color!important
+
+.btn-outline-info
+  border-color: $info-color!important
 
 .text-primary
   color: $primary-color!important
+
 .text-secondary
   color: $secondary-color!important
+
 .text-info
   color: $info-color!important
+
+/***********************
+  SPECIFIC COMPONENTS
+ ***********************/
+
+/* alerts */
+.alert
+  border: none
+  border-radius: 0!important
+  box-shadow: 1px 1px 1px grey
+  transition: transform 100ms ease-in
+  &:hover
+    transform: scale(1.01)
+
+/* Buttons */
+.btn
+  border-width: 0.5px
+  border-radius: 0
+  box-shadow: $theme-shadow
+  &.btn-primary, .btn-secondary
+    border: none
+
+.btn-group
+  .btn
+    box-shadow: 0 0 0 white
+
+/* cards */
+.card
+  box-shadow: $theme-shadow
+
+.card, .card-img-top
+  border-radius: 0
+
 
 
 

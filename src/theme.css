@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Merienda);
+/***********************
+  Colors and fonts
+ ***********************/
 /* Add Text shadow to the display texts */
 .display-1 {
   text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2); }
@@ -44,7 +48,7 @@
 
 /* Selector code */
 h1, h2, h3, h4, h5, h6, p, a {
-  font-family: "Merienda", sans-serif; }
+  font-family: "Merienda", cursive; }
 
 .bg-primary, .bg-secondary {
   font-family: sans-serif; }
@@ -58,14 +62,30 @@ h1, h2, h3, h4, h5, h6, p, a {
     .blockquote p:before, .blockquote p:after {
       content: '"'; }
 
-.bg-primary {
+.bg-primary, .alert-primary, .badge-primary, .btn-primary {
   background: #EFCC70 !important; }
 
-.bg-secondary {
-  background: #6C5D33 !important; }
+.bg-secondary, .alert-secondary, .badge-secodary, .btn-secondary {
+  background: #6C5D33 !important;
+  color: white; }
 
-.bg-info {
-  background: #C0E4F0 !important; }
+.bg-info, .alert-info, .badge-info, .btn-info {
+  background: #C0E4F0 !important;
+  color: black; }
+
+.btn-outline-primary {
+  border-color: #EFCC70 !important;
+  color: black; }
+  .btn-outline-primary:hover {
+    background: #EFCC70 !important; }
+
+.btn-outline-secondary {
+  border-color: #6C5D33 !important; }
+  .btn-outline-secondary:hover {
+    background: #6C5D33 !important; }
+
+.btn-outline-info {
+  border-color: #C0E4F0 !important; }
 
 .text-primary {
   color: #EFCC70 !important; }
@@ -75,3 +95,33 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .text-info {
   color: #C0E4F0 !important; }
+
+/***********************
+  SPECIFIC COMPONENTS
+ ***********************/
+/* alerts */
+.alert {
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: 1px 1px 1px grey;
+  transition: transform 100ms ease-in; }
+  .alert:hover {
+    transform: scale(1.01); }
+
+/* Buttons */
+.btn {
+  border-width: 0.5px;
+  border-radius: 0;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2); }
+  .btn.btn-primary, .btn .btn-secondary {
+    border: none; }
+
+.btn-group .btn {
+  box-shadow: 0 0 0 white; }
+
+/* cards */
+.card {
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2); }
+
+.card, .card-img-top {
+  border-radius: 0; }
